@@ -8,6 +8,7 @@ A wholesale motorcycle parts company needed to know which product lines and ware
 Source: DataCamp Advanced SQL track - all analysis and insights are my own
 
 ### SQL Solution
+'''sql
 SELECT
   product_line,
   CASE 
@@ -20,8 +21,8 @@ SELECT
 FROM sales
 WHERE client_type = 'Wholesale'
 GROUP BY product_line, month, warehouse
-ORDER BY product_line, month, warehouse;
-
+'ORDER BY product_line, month, warehouse;'
+**
 ### Key Finding
 Central warehouse had highest net revenue in July for Miscellaneous parts.
 
